@@ -126,7 +126,7 @@ ul {
     font-weight: 700;
     background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color:#033254;
     margin-bottom: 1.5rem;
     position: relative;
     display: inline-block;
@@ -181,8 +181,8 @@ ul {
 
 /* Header */
 .header {
-    padding: 20px 0;
-    /* backdrop-filter: blur(10px); */
+    padding: 5px 0;
+    /* backdrop-filter: blur(05px); */
     /* -webkit-backdrop-filter: blur(10px); */
     /* background-color: rgb(255 255 255 / 0%); */
     /* box-shadow: var(--box-shadow); */
@@ -195,9 +195,9 @@ ul {
 }
 
 .header.header-shrink {
-    padding: 10px 0;
+    padding: 2px 0;
     background-color: var(--white-color);
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0.5px 0px rgba(241, 236, 236, 0.642);
 }
 
 .header .navbar-brand {
@@ -230,11 +230,11 @@ ul {
 .header .navbar-nav .nav-link {
     color: var(--white-color);
     font-weight: 500;
-    padding: 8px 15px;
+    padding: 5px 8px;
     margin: 0 5px;
     position: relative;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 13px;
     letter-spacing: 0.5px;
     transition: var(--transition);
 }
@@ -285,7 +285,7 @@ ul {
     border: none;
     border-radius: 0;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 .header .dropdown-item {
@@ -305,7 +305,7 @@ ul {
     height: 100vh;
     width: 100%;
     overflow: hidden;
-    background-color: var(--dark-color);
+    background-color: var(--light-color);
 }
 
 .hero-banner .carousel,
@@ -322,7 +322,7 @@ ul {
     width: 100%;
     height: 100%;
     background-size: cover;
-    background-position: center;
+    background-position: center;golo
     z-index: 1;
 }
 
@@ -333,7 +333,7 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.7));
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6));
     z-index: 2;
 }
 
@@ -374,10 +374,10 @@ ul {
 .hero-banner .carousel-control-next {
     width: 50px;
     height: 50px;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.121);
     border-radius: 50%;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-70%);
     opacity: 0;
     transition: var(--transition);
 }
@@ -634,11 +634,11 @@ ul {
 }
 
 .vision-card {
-    background: #fff;
+    background: #f3f6f900;
     padding: 2rem;
     border-radius: 15px;
     height: 100%;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 5px 15px rgba(85, 26, 247, 0.39);
     transition: var(--transition);
 }
 
@@ -837,18 +837,22 @@ ul {
 }
 
 .certification-item img {
-    height: 150px;
+    height: 120px;
     width: auto;
     margin: 0 auto;
     /*filter: grayscale(100%);*/
     /*opacity: 0.7;*/
     transition: var(--transition);
+    box-shadow: 0 5px 15px rgba(15, 11, 241, 0.378);
 }
 
 .certification-item:hover img {
     /*filter: grayscale(0);*/
     /*opacity: 1;*/
-    transform: scale(1.2);
+    /* transform: scale(1.2); */
+}
+.certificeImages div:hover img{
+transform: scale(1.2);
 }
 
 /* Video Section */
@@ -1140,16 +1144,17 @@ ul {
 }
 
 .partner-logos img {
-    height: 60px;
+    height: 100px;
     width: auto;
-    opacity: 0.7;
+    opacity: 1;
     transition: var(--transition);
     margin: 15px;
+    box-shadow: 0 5px 15px rgba(15, 11, 241, 0.447);
 }
 
 .partner-logos img:hover {
     opacity: 1;
-    transform: translateY(-5px);
+    transform: scale(1.3) translateY(-5px);
 }
 
 /* Production Services */
@@ -1427,11 +1432,11 @@ textarea.form-control {
 }
 
 .footer-top {
-    padding: 80px 0 40px;
+    padding: 20px 0 20px;
 }
 
 .footer-widget {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .footer-logo {
@@ -1454,7 +1459,7 @@ textarea.form-control {
 .footer-widget h4::after {
     content: '';
     position: absolute;
-    width: 40px;
+    width: 20px;
     height: 2px;
     background-color: var(--primary-color);
     bottom: -10px;
@@ -1875,9 +1880,9 @@ textarea.form-control {
 /* Better Accessibility */
 @media (prefers-reduced-motion: reduce) {
     * {
-        animation-duration: 0.01ms !important;
+        animation-duration: 0.03ms !important;
         animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
+        transition-duration: 0.03ms !important;
         scroll-behavior: auto !important;
     }
 }
@@ -1893,10 +1898,34 @@ textarea.form-control {
     }
 }
 
+/* Zoom & subtle move effect */
+.animated-bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: bgZoom 15s ease-in-out infinite alternate;
+}
+
+/* Keyframes for smooth zoom & slight move */
+@keyframes bgZoom {
+  0% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05) translateY(-10px);
+    opacity: 0.95;
+  }
+  100% {
+    transform: scale(1.1) translateY(0);
+    opacity: 1;
+  }
+}
+
 /* Page Banner */
 .page-banner {
     background: linear-gradient(rgba(30, 77, 146, 0.9), rgba(30, 77, 146, 0.9)), url('images/banner-bg.jpg') center/cover;
-    padding: 120px 0 80px;
+    padding:45px 80px;
     text-align: center;
     color: var(--white-color);
 }
@@ -1968,7 +1997,7 @@ textarea.form-control {
 
 /* Product Cards */
 .product-card {
-    background: var(--white-color);
+    background: rgba(35, 116, 178, 0);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: var(--box-shadow);
@@ -1993,7 +2022,7 @@ textarea.form-control {
 }
 
 .product-card:hover .product-image img {
-    transform: scale(1.1);
+    transform: scale(1.15);
 }
 
 .product-overlay {
@@ -2002,7 +2031,7 @@ textarea.form-control {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(30, 77, 146, 0.8);
+    background: rgba(89, 136, 207, 0);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2075,12 +2104,12 @@ textarea.form-control {
 
 /* Capacity Page Specific Styles */
 .capacity-stat-card {
-    background: linear-gradient(135deg, #ffffff, #f8f9fa);
-    border-radius: 15px;
+    background: linear-gradient(135deg, #ffffff, #f4f6f800);
+    border-radius: 10px;
     padding: 2rem;
     box-shadow: 0 5px 20px rgba(0,0,0,0.05);
     transition: var(--transition);
-    height: 100%;
+    height: 80%;
     border: 1px solid rgba(0,0,0,0.05);
 }
 
@@ -2107,7 +2136,7 @@ textarea.form-control {
     border-radius: 15px;
     padding: 2rem;
     margin-bottom: 2rem;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 5px 20px rgba(55, 46, 245, 0.05);
 }
 
 .specs-list {
@@ -2118,6 +2147,13 @@ textarea.form-control {
 }
 
 .spec-item {
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(98, 91, 237, 0.364);
+}
+
+.spec-item-comp {
     padding: 1.5rem;
     background: #f8f9fa;
     border-radius: 10px;
@@ -2326,6 +2362,19 @@ textarea.form-control {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0,0,0,0.1);
 }
+
+/* Quality Control Process */
+.qcp-card {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    height: 100%;
+    transition: var(--transition);
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
 
 .feature-icon {
     width: 80px;

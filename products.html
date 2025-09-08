@@ -43,12 +43,12 @@
         <nav class="navbar navbar-expand-lg">
           <a class="navbar-brand" href="#">
             <img
-              src="https://erp.kaizerknitwear.com/static/images/logo.jpg"
+              src="images/logo.png"
               alt="Kaizer Knitwears Ltd."
               class="img-fluid logo-dark"
             />
             <img
-              src="https://erp.kaizerknitwear.com/static/images/logo.jpg"
+              src="images/logo.png"
               alt="Kaizer Knitwears Ltd."
               class="img-fluid logo-light"
             />
@@ -75,6 +75,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="capacity.html">Capacity</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link " href="Compliance.html">Compliance</a>
+              </li>
               <!-- <li class="nav-item">
                         <a class="nav-link" href="">Sustainability</a>
                     </li> -->
@@ -89,6 +92,30 @@
             </div>
           </div>
         </nav>
+<style>
+  .navbar-nav .nav-link {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link:focus,
+  .navbar-nav .nav-link.active {
+    color: white;
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+  .navbar-nav .nav-link::after {
+    display: none;
+  }
+</style>
+
+</head>
+<head>
+  <link rel="stylesheet" href="style.css" />
+</head>
       </div>
     </header>
 
@@ -98,65 +125,7 @@
         <div class="row">
           <div class="col-12">
             <div class="page-banner-content">
-              <h1>Our Products</h1>
-              <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">
-                    Products
-                  </li>
-                </ol>
-              </nav>
-            </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Product Categories -->
-    <section class="product-categories-section py-5">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="subtitle">Categories</span>
-          <h2>Browse Our Collections</h2>
-          <p>Explore our wide range of high-quality garments</p>
-        </div>
-        <div class="row g-4">
-          <div class="col-lg-3 col-md-6">
-            <div class="category-filter-card active">
-              <div class="category-icon">
-                <i class="fas fa-tshirt"></i>
-              </div>
-              <h4>All Products</h4>
-              <span class="product-count">350+</span>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="category-filter-card">
-              <div class="category-icon">
-                <i class="fas fa-male"></i>
-              </div>
-              <h4>Men's Wear</h4>
-              <span class="product-count">120+</span>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="category-filter-card">
-              <div class="category-icon">
-                <i class="fas fa-female"></i>
-              </div>
-              <h4>Women's Wear</h4>
-              <span class="product-count">150+</span>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="category-filter-card">
-              <div class="category-icon">
-                <i class="fas fa-child"></i>
-              </div>
-              <h4>Kids Wear</h4>
-              <span class="product-count">80+</span>
-            </div>
           </div>
         </div>
       </div>
@@ -165,43 +134,19 @@
     <!-- Product Grid -->
     <section class="product-grid-section py-5">
       <div class="container">
-        <!-- Filters -->
-        <div class="product-filters mb-4">
-          <div class="row align-items-center">
-            <div class="col-md-8">
-              <div class="filter-buttons">
-                <button class="btn btn-outline-primary active">All</button>
-                <button class="btn btn-outline-primary">T-Shirts</button>
-                <button class="btn btn-outline-primary">Sweaters</button>
-                <button class="btn btn-outline-primary">Hoodies</button>
-                <button class="btn btn-outline-primary">Pants</button>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="sort-select">
-                <select class="form-select">
-                  <option>Latest Products</option>
-                  <option>Popular Products</option>
-                  <option>Featured Products</option>
-                </select>
-              </div>
-            </div>
-          </div>
-        </div>
-
+        
         <!-- Products Grid -->
         <div class="row g-4">
           <!-- Product Card 1 -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="col-xl-3 col-lg-4 col-md-6" data-catagori="tshirt">
             <div class="product-card">
               <div class="product-image">
-                <img src="images/p4.jpg" alt="Product" />
+                <img src="images/p-m-1.webp" alt="Product" />
                 <div class="product-overlay">
-                  <a href="#" class="btn btn-primary">View Details</a>
                 </div>
               </div>
               <div class="product-info">
-                <h4>Premium Cotton T-Shirt</h4>
+                <h4>Men's T-Shirt</h4>
                 <div class="product-meta">
                   <span class="category">Men's Wear</span>
                   <span class="separator">|</span>
@@ -210,22 +155,19 @@
               </div>
             </div>
           </div>
-
-          <!-- Repeat product cards (2-8) with different images and details -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="col-xl-3 col-lg-4 col-md-6" data-catagori="hoodies">
             <div class="product-card">
               <div class="product-image">
-                <img src="images/p2.avif" alt="Product" />
+                <img src="images/p-m-2.webp" alt="Product" />
                 <div class="product-overlay">
-                  <a href="#" class="btn btn-primary">View Details</a>
                 </div>
               </div>
               <div class="product-info">
-                <h4>Classic Denim Jacket</h4>
+                <h4>Men's Polo-Shirt</h4>
                 <div class="product-meta">
                   <span class="category">Men's Wear</span>
                   <span class="separator">|</span>
-                  <span class="sku">KK-DJ002</span>
+                  <span class="sku">KK-PO001</span>
                 </div>
               </div>
             </div>
@@ -233,17 +175,54 @@
           <div class="col-xl-3 col-lg-4 col-md-6">
             <div class="product-card">
               <div class="product-image">
-                <img src="images/p1.avif" alt="Product" />
+                <img src="images/p-m-3.webp" alt="Product" />
                 <div class="product-overlay">
-                  <a href="#" class="btn btn-primary">View Details</a>
+                  
                 </div>
               </div>
               <div class="product-info">
-                <h4>Elegant Evening Dress</h4>
+                <h4>Men's Hoodie</h4>
+                <div class="product-meta">
+                  <span class="category">Men's Wear</span>
+                  <span class="separator">|</span>
+                  <span class="sku">KK-HO001</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="images/p-m-4.webp" alt="Product" />
+                <div class="product-overlay">
+                  
+                </div>
+              </div>
+              <div class="product-info">
+                <h4>Men's Joggers</h4>
+                <div class="product-meta">
+                  <span class="category">Men's Wear</span>
+                  <span class="separator">|</span>
+                  <span class="sku">KK-JO001</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Womens wear -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="images/p-w-1.webp" alt="Product" />
+                <div class="product-overlay">
+                  
+                </div>
+              </div>
+              <div class="product-info">
+                <h4>Women's Tank Top</h4>
                 <div class="product-meta">
                   <span class="category">Women's Wear</span>
                   <span class="separator">|</span>
-                  <span class="sku">KK-ED003</span>
+                  <span class="sku">KK-TT001</span>
                 </div>
               </div>
             </div>
@@ -251,55 +230,69 @@
           <div class="col-xl-3 col-lg-4 col-md-6">
             <div class="product-card">
               <div class="product-image">
-                <img src="images/p3.jpeg" alt="Product" />
-                <div class="product-overlay">
-                  <a href="#" class="btn btn-primary">View Details</a>
+                <img src="images/p-w-3.webp" alt="Product" />
+                <div class="product-overlay">            
                 </div>
               </div>
               <div class="product-info">
-                <h4>Comfortable Kids Hoodie</h4>
+                <h4>Women's Tops</h4>
                 <div class="product-meta">
-                  <span class="category">Kids Wear</span>
+                  <span class="category">Women's Wear</span>
+                  <span class="separator">|</span>
+                  <span class="sku">KK-WT001</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="images/p-w-2.webp" alt="Product" />
+                <div class="product-overlay">
+                  
+                </div>
+              </div>
+              <div class="product-info">
+                <h4>Women's T-Shirt</h4>
+                <div class="product-meta">
+                  <span class="category">Women's Wear</span>
+                  <span class="separator">|</span>
+                  <span class="sku">KK-WT003</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="images/p-w-4.webp" alt="Product" />
+                <div class="product-overlay">
+                </div>
+              </div>
+              <div class="product-info">
+                <h4>Women's Hoodie</h4>
+                <div class="product-meta">
+                  <span class="category">Women's Wear</span>
                   <span class="separator">|</span>
                   <span class="sku">KK-KH004</span>
                 </div>
               </div>
             </div>
           </div>
+          <!-- Boys wear -->
           <div class="col-xl-3 col-lg-4 col-md-6">
             <div class="product-card">
               <div class="product-image">
-                <img src="images/p7.jpg" alt="Product" />
+                <img src="images/p-b-1.webp" alt="Product" />
                 <div class="product-overlay">
-                  <a href="#" class="btn btn-primary">View Details</a>
                 </div>
               </div>
               <div class="product-info">
-                <h4>Premium Cotton T-Shirt</h4>
+                <h4>Boy's Tank Top</h4>
                 <div class="product-meta">
-                  <span class="category">Men's Wear</span>
+                  <span class="category">Boy's Wear</span>
                   <span class="separator">|</span>
-                  <span class="sku">KK-TS001</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Repeat product cards (2-8) with different images and details -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="product-card">
-              <div class="product-image">
-                <img src="images/p8.webp" alt="Product" />
-                <div class="product-overlay">
-                  <a href="#" class="btn btn-primary">View Details</a>
-                </div>
-              </div>
-              <div class="product-info">
-                <h4>Classic Denim Jacket</h4>
-                <div class="product-meta">
-                  <span class="category">Men's Wear</span>
-                  <span class="separator">|</span>
-                  <span class="sku">KK-DJ002</span>
+                  <span class="sku">KK-BW001</span>
                 </div>
               </div>
             </div>
@@ -307,17 +300,16 @@
           <div class="col-xl-3 col-lg-4 col-md-6">
             <div class="product-card">
               <div class="product-image">
-                <img src="images/p5.webp" alt="Product" />
+                <img src="images/p-b-2.webp" alt="Product" />
                 <div class="product-overlay">
-                  <a href="#" class="btn btn-primary">View Details</a>
                 </div>
               </div>
               <div class="product-info">
-                <h4>Elegant Evening Dress</h4>
+                <h4>Boy's T-Shirt</h4>
                 <div class="product-meta">
-                  <span class="category">Women's Wear</span>
+                  <span class="category">Boy's Wear</span>
                   <span class="separator">|</span>
-                  <span class="sku">KK-ED003</span>
+                  <span class="sku">KK-BW002</span>
                 </div>
               </div>
             </div>
@@ -325,114 +317,179 @@
           <div class="col-xl-3 col-lg-4 col-md-6">
             <div class="product-card">
               <div class="product-image">
-                <img src="images/p9.webp" alt="Product" />
+                <img src="images/p-b-3.webp" alt="Product" />
                 <div class="product-overlay">
-                  <a href="#" class="btn btn-primary">View Details</a>
                 </div>
               </div>
               <div class="product-info">
-                <h4>Comfortable Kids Hoodie</h4>
+                <h4>Boy's Polo</h4>
                 <div class="product-meta">
-                  <span class="category">Kids Wear</span>
+                  <span class="category">Boy's Wear</span>
                   <span class="separator">|</span>
-                  <span class="sku">KK-KH004</span>
+                  <span class="sku">KK-BW003</span>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <!-- Pagination -->
-        <div class="pagination-wrapper text-center mt-5">
-          <nav aria-label="Product navigation">
-            <ul class="pagination justify-content-center">
-              <li class="page-item">
-                <a class="page-link" href="#"
-                  ><i class="fas fa-chevron-left"></i
-                ></a>
-              </li>
-              <li class="page-item active">
-                <a class="page-link" href="#">1</a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item">
-                <a class="page-link" href="#"
-                  ><i class="fas fa-chevron-right"></i
-                ></a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </section>
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="images/p-b-4.webp" alt="Product" />
+                <div class="product-overlay">
+                </div>
+              </div>
+              <div class="product-info">
+                <h4>Boy's Hoodie</h4>
+                <div class="product-meta">
+                  <span class="category">Boy's Wear</span>
+                  <span class="separator">|</span>
+                  <span class="sku">KK-BW004</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- girls wear -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="images/p-g-1.webp" alt="Product" />
+                <div class="product-overlay">
+                </div>
+              </div>
+              <div class="product-info">
+                <h4>Girl's Tank Top</h4>
+                <div class="product-meta">
+                  <span class="category">Girl's  Wear</span>
+                  <span class="separator">|</span>
+                  <span class="sku">KK-GW001</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="images/p-g-2.webp" alt="Product" />
+                <div class="product-overlay">
+                </div>
+              </div>
+              <div class="product-info">
+                <h4>Girl's T-Shirt</h4>
+                <div class="product-meta">
+                  <span class="category">Girl's  Wear</span>
+                  <span class="separator">|</span>
+                  <span class="sku">KK-GW002</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="images/p-g-3.webp" alt="Product" />
+                <div class="product-overlay">
+                </div>
+              </div>
+              <div class="product-info">
+                <h4>Girl's Top Bottom</h4>
+                <div class="product-meta">
+                  <span class="category">Girl's  Wear</span>
+                  <span class="separator">|</span>
+                  <span class="sku">KK-GW003</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="images/p-g-4.webp" alt="Product" />
+                <div class="product-overlay">
+                </div>
+              </div>
+              <div class="product-info">
+                <h4>Girl's Hoodie</h4>
+                <div class="product-meta">
+                  <span class="category">Girl's  Wear</span>
+                  <span class="separator">|</span>
+                  <span class="sku">KK-GW004</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Babys wear -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="images/baby-1.webp" alt="Product" />
+                <div class="product-overlay">
+                </div>
+              </div>
+              <div class="product-info">
+                <h4>Baby's Romper</h4>
+                <div class="product-meta">
+                  <span class="category">Baby's Wear</span>
+                  <span class="separator">|</span>
+                  <span class="sku">KK-BW001</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="images/baby-2.webp" alt="Product" />
+                <div class="product-overlay">
+                </div>
+              </div>
+              <div class="product-info">
+                <h4>Baby's T-Shirt</h4>
+                <div class="product-meta">
+                  <span class="category">Baby's Wear</span>
+                  <span class="separator">|</span>
+                  <span class="sku">KK-BW002</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="images/baby-3.webp" alt="Product" />
+                <div class="product-overlay">
+                </div>
+              </div>
+              <div class="product-info">
+                <h4>Baby's Full Dress</h4>
+                <div class="product-meta">
+                  <span class="category">Baby's Wear</span>
+                  <span class="separator">|</span>
+                  <span class="sku">KK-BW003</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="images/baby-4.webp" alt="Product" />
+                <div class="product-overlay">
+                </div>
+              </div>
+              <div class="product-info">
+                <h4>Baby's Shorts</h4>
+                <div class="product-meta">
+                  <span class="category">Baby's Wear</span>
+                  <span class="separator">|</span>
+                  <span class="sku">KK-BW004</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="footer-top">
-        <div class="container">
-          <div class="row g-4">
-            <div class="col-lg-4">
-              <div class="footer-widget">
-                <img
-                  src="https://via.placeholder.com/180x50/ffffff?text=Kaizer+Knitwears+Ltd."
-                  alt="Kaizer Knitwears Ltd."
-                  class="footer-logo"
-                />
-                <p>
-                  Premium garment manufacturer serving global brands with
-                  quality, reliability, and ethical production standards since
-                  2005.
-                </p>
-                <div class="footer-social">
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-4">
-              <div class="footer-widget">
-                <h4>Quick Links</h4>
-                <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="index.html#about">About Us</a></li>
-                  <li><a href="products.html">Products</a></li>
-                  <li>
-                    <a href="index.html#sustainability">Sustainability</a>
-                  </li>
-                  <li><a href="index.html#contact">Contact</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4">
-              <div class="footer-widget">
-                <h4>Our Products</h4>
-                <ul>
-                  <li><a href="#">Men's Wear</a></li>
-                  <li><a href="#">Women's Wear</a></li>
-                  <li><a href="#">Kid's Wear</a></li>
-                  <li><a href="#">Active Wear</a></li>
-                  <li><a href="#">Denim Collection</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4">
-              <div class="footer-widget">
-                <h4>Newsletter</h4>
-                <p>Subscribe to our newsletter for the latest updates.</p>
-                <form class="newsletter-form">
-                  <input type="email" placeholder="Your Email" required />
-                  <button type="submit">
-                    <i class="fas fa-paper-plane"></i>
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="footer-bottom">
         <div class="container">
           <div class="row">
@@ -468,5 +525,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
     <!-- Custom JS -->
     <script src="main.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".slider").slick({
+          dots: true,
+          arrows: false,
+          autoplay: true,
+          autoplaySpeed: 3000,
+        });
+      });
+    </script>
   </body>
 </html>
