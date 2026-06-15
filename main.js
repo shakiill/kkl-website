@@ -287,11 +287,35 @@ $(document).ready(function () {
     //     }
     // };
 
+    // Dynamic Product Category Filtering
+    const initProductFilters = () => {
+        const filterBtns = $('.filter-buttons .btn');
+        const gridItems = $('.product-grid-section [data-category]');
+
+        if (filterBtns.length && gridItems.length) {
+            filterBtns.click(function (e) {
+                e.preventDefault();
+                filterBtns.removeClass('active');
+                $(this).addClass('active');
+
+                const filterValue = $(this).attr('data-filter');
+
+                if (filterValue === 'all') {
+                    gridItems.fadeIn(400);
+                } else {
+                    gridItems.hide();
+                    gridItems.filter(`[data-category="${filterValue}"]`).fadeIn(400);
+                }
+            });
+        }
+    };
+
     // Initialize all components
     handleVideoModal();
     initContactForm();
     initWaypoints();
     initScrollHandler();
+    initProductFilters();
     // initPartnerLogos();
 
     // Animate elements on scroll
