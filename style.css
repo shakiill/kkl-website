@@ -2525,22 +2525,43 @@ textarea.form-control {
     font-weight: 600;
 }
 
-/* Logo & Badge Filter Optimization */
-.certificeImages img,
-.partner-logos img,
-.certifications img {
-    filter: grayscale(100%);
-    opacity: 0.6;
+/* Certification logos — no card, raw logos */
+.cert-card {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transition: var(--transition);
+}
+
+.cert-card img {
+    max-height: 110px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    filter: none !important;
+    opacity: 1 !important;
+    transition: var(--transition);
+    display: block;
+}
+
+.cert-card:hover {
+    transform: translateY(-6px) scale(1.06);
+}
+
+.partner-logos img {
+    filter: none !important;
+    opacity: 1 !important;
     transition: var(--transition) !important;
 }
 
-.certificeImages img:hover,
-.partner-logos img:hover,
-.certifications img:hover,
-.certifications .col:hover img {
-    filter: grayscale(0%);
-    opacity: 1;
-    transform: scale(1.1) translateY(-3px);
+.partner-logos img:hover {
+    transform: translateY(-5px) scale(1.1);
 }
 
 .certificeImages .col-auto,
@@ -2685,5 +2706,18 @@ textarea.form-control {
     }
     .footer-legal-links {
         justify-content: center;
+    }
+}
+
+/* Certifications Section Styling */
+.certification-section,
+.certifications {
+    padding: 80px 0 !important;
+}
+
+@media (max-width: 991px) {
+    .certification-section,
+    .certifications {
+        padding: 50px 0 !important;
     }
 }
