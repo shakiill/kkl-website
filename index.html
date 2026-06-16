@@ -300,88 +300,145 @@
       </div>
     </div>
   </section>
-  <!-- Updated Video Section -->
-  <section class="video-section" id="sustainability-video">
-    <div class="video-overlay"></div>
-    <div class="container">
-      <div class="row align-items-center">
-        <!-- Left Content Column -->
-        <div class="col-lg-6 mb-5 mb-lg-0">
-          <div class="video-content pr-lg-5">
-            <span class="subtitle">Our Commitment</span>
-            <h2 class="text-white mb-4">Safe & Sustainable Manufacturing</h2>
 
-            <div class="safety-features mb-4">
-              <div class="feature-item d-flex mb-3">
-                <div class="icon-box bg-primary text-white">
+  <!-- Sustainability Section — Full BG Redesign -->
+  <section class="sustain-section" id="sustainability-video">
+    <!-- Multi-layer overlay -->
+    <div class="sustain-overlay"></div>
+    <!-- Decorative grid lines -->
+    <div class="sustain-grid"></div>
+
+    <div class="container sustain-container">
+      <div class="row align-items-center g-lg-5 g-4">
+
+        <!-- LEFT: glassmorphism content panel -->
+        <div class="col-lg-6">
+          <div class="sustain-glass-panel">
+            <span class="sustain-eyebrow"><i class="fas fa-seedling me-2"></i>Our Commitment</span>
+            <h2 class="sustain-heading">Safe &amp; Sustainable<br><span class="sustain-heading--accent">Manufacturing</span></h2>
+            <p class="sustain-desc">We believe great garments and a better planet go hand in hand. Every decision we make — from energy sourcing to waste management — reflects that commitment.</p>
+
+            <!-- Pillars -->
+            <div class="sustain-pillars">
+
+              <div class="sustain-pillar">
+                <div class="sustain-pillar__icon sustain-pillar__icon--blue">
                   <i class="fas fa-shield-alt"></i>
                 </div>
-                <div class="content-box">
-                  <h4 class="text-white">Worker Safety First</h4>
-                  <p class="text-light">
-                    ISO 45001 certified facilities with regular safety audits
-                  </p>
+                <div class="sustain-pillar__body">
+                  <h4>Worker Safety First</h4>
+                  <p>ISO 45001 certified facilities with monthly safety audits, fire drills, and health officers on every floor.</p>
                 </div>
+                <span class="sustain-pillar__badge">ISO 45001</span>
               </div>
 
-              <div class="feature-item d-flex mb-3">
-                <div class="icon-box bg-success text-white">
-                  <i class="fas fa-leaf"></i>
+              <div class="sustain-pillar">
+                <div class="sustain-pillar__icon sustain-pillar__icon--green">
+                  <i class="fas fa-tint-slash"></i>
                 </div>
-                <div class="content-box">
-                  <h4 class="text-white">Eco-Friendly Processes</h4>
-                  <p class="text-light">
-                    Zero liquid discharge system and sustainable waste
-                    management
-                  </p>
+                <div class="sustain-pillar__body">
+                  <h4>Zero Liquid Discharge</h4>
+                  <p>Our ETP plant treats 100% of effluents. No wastewater leaves our facility — ever.</p>
                 </div>
+                <span class="sustain-pillar__badge">ZLD</span>
               </div>
 
-              <div class="feature-item d-flex">
-                <div class="icon-box bg-warning text-white">
+              <div class="sustain-pillar">
+                <div class="sustain-pillar__icon sustain-pillar__icon--amber">
                   <i class="fas fa-solar-panel"></i>
                 </div>
-                <div class="content-box">
-                  <h4 class="text-white">Renewable Energy</h4>
-                  <p class="text-light">
-                    40% of energy needs met through solar power
-                  </p>
+                <div class="sustain-pillar__body">
+                  <h4>Renewable Energy</h4>
+                  <p>40% of energy from on-site rooftop solar — significantly cutting our carbon footprint.</p>
                 </div>
+                <span class="sustain-pillar__badge">40% Solar</span>
+              </div>
+
+            </div>
+
+            <!-- Metric pills row -->
+            <div class="sustain-pills">
+              <div class="sustain-pill">
+                <span class="sustain-pill__num">40%</span>
+                <span class="sustain-pill__lbl">Solar Energy</span>
+              </div>
+              <div class="sustain-pill">
+                <span class="sustain-pill__num">100%</span>
+                <span class="sustain-pill__lbl">ETP Treated</span>
+              </div>
+              <div class="sustain-pill">
+                <span class="sustain-pill__num">8+</span>
+                <span class="sustain-pill__lbl">Certifications</span>
+              </div>
+              <div class="sustain-pill">
+                <span class="sustain-pill__num">24+</span>
+                <span class="sustain-pill__lbl">Yrs Experience</span>
               </div>
             </div>
 
-            <a href="about.html" class="btn btn-outline-light">Learn More</a>
+            <a href="about.html" class="sustain-cta-btn">Explore Our Practices <i class="fas fa-arrow-right ms-2"></i></a>
           </div>
         </div>
 
-        <!-- Right Video Column -->
+        <!-- RIGHT: floating video card -->
         <div class="col-lg-6">
-          <div class="video-play-wrapper text-center">
-            <div class="video-thumbnail position-relative">
-              <img src="images/V-Image.webp" alt="Factory Tour" class="img-fluid rounded-lg" />
-              <a href="https://www.youtube.com/watch?v=your-video-id" class="video-play-btn" data-bs-toggle="modal"
-                data-bs-target="#videoModal">
-                <i class="fas fa-play"></i>
+          <div class="sustain-video-wrap">
+            <!-- Decorative corner accent -->
+            <div class="sustain-video-corner sustain-video-corner--tl"></div>
+            <div class="sustain-video-corner sustain-video-corner--br"></div>
+
+            <div class="sustain-video-thumb">
+              <img src="images/V-Image.webp" alt="Kaizer Factory Tour" />
+              <!-- Full overlay link -->
+              <a href="#" class="sustain-play-btn" data-bs-toggle="modal" data-bs-target="#videoModal" aria-label="Watch factory tour">
+                <span class="sustain-play-ring sustain-play-ring--1"></span>
+                <span class="sustain-play-ring sustain-play-ring--2"></span>
+                <span class="sustain-play-icon"><i class="fas fa-play"></i></span>
               </a>
+              <!-- Top label -->
+              <div class="sustain-video-tag">
+                <i class="fas fa-circle-dot me-1" style="color:#ef4444;"></i> Watch Factory Tour
+              </div>
+              <!-- Bottom caption bar -->
+              <div class="sustain-video-caption">
+                <div class="sustain-video-caption__text">
+                  <strong>2-Minute Facility Tour</strong>
+                  <span>See our full manufacturing process</span>
+                </div>
+                <i class="fas fa-play-circle sustain-video-caption__icon"></i>
+              </div>
             </div>
-            <p class="text-white mt-3 mb-0">
-              Watch our 2-minute facility tour
-            </p>
+
+            <!-- Below video: secondary image row -->
+            <div class="sustain-img-row">
+              <div class="sustain-img-thumb">
+                <img src="images/Sustainability-1.webp" alt="Sustainability at KKL" />
+                <div class="sustain-img-thumb__label">Eco Processes</div>
+              </div>
+              <div class="sustain-img-thumb">
+                <img src="images/solar.jpg" alt="Solar Energy" />
+                <div class="sustain-img-thumb__label">Solar Power</div>
+              </div>
+            </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
+
+  <!-- Video Modal -->
   <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content bg-dark border-0">
+        <div class="modal-header border-0 pb-0">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body p-2 pt-0">
           <div class="ratio ratio-16x9">
-            <!-- <iframe id="videoFrame" src="" allowfullscreen></iframe> -->
-            <p>Coming soon...</p>
+            <div class="d-flex align-items-center justify-content-center bg-black text-white rounded">
+              <p class="mb-0 opacity-50"><i class="fas fa-film me-2"></i>Video coming soon…</p>
+            </div>
           </div>
         </div>
       </div>
