@@ -383,41 +383,52 @@
         <!-- RIGHT: floating video card -->
         <div class="col-lg-6">
           <div class="sustain-video-wrap">
-            <!-- Decorative corner accent -->
+            <!-- Decorative corner accents -->
             <div class="sustain-video-corner sustain-video-corner--tl"></div>
             <div class="sustain-video-corner sustain-video-corner--br"></div>
 
+            <!-- Main video thumbnail -->
             <div class="sustain-video-thumb">
               <img src="images/V-Image.webp" alt="Kaizer Factory Tour" />
-              <!-- Full overlay link -->
+              <!-- Play overlay -->
               <a href="#" class="sustain-play-btn" data-bs-toggle="modal" data-bs-target="#videoModal" aria-label="Watch factory tour">
                 <span class="sustain-play-ring sustain-play-ring--1"></span>
                 <span class="sustain-play-ring sustain-play-ring--2"></span>
                 <span class="sustain-play-icon"><i class="fas fa-play"></i></span>
               </a>
-              <!-- Top label -->
+              <!-- Top-left LIVE tag -->
               <div class="sustain-video-tag">
                 <i class="fas fa-circle-dot me-1" style="color:#ef4444;"></i> Watch Factory Tour
               </div>
-              <!-- Bottom caption bar -->
-              <div class="sustain-video-caption">
-                <div class="sustain-video-caption__text">
+            </div>
+
+            <!-- Caption bar — sits BELOW the thumbnail -->
+            <div class="sustain-caption-bar">
+              <div class="sustain-caption-bar__left">
+                <span class="sustain-caption-bar__icon"><i class="fas fa-video"></i></span>
+                <div>
                   <strong>2-Minute Facility Tour</strong>
                   <span>See our full manufacturing process</span>
                 </div>
-                <i class="fas fa-play-circle sustain-video-caption__icon"></i>
               </div>
+              <a href="#" class="sustain-caption-bar__btn" data-bs-toggle="modal" data-bs-target="#videoModal">
+                <i class="fas fa-play"></i>
+              </a>
             </div>
 
-            <!-- Below video: secondary image row -->
+            <!-- Secondary image row -->
             <div class="sustain-img-row">
               <div class="sustain-img-thumb">
-                <img src="images/Sustainability-1.webp" alt="Sustainability at KKL" />
-                <div class="sustain-img-thumb__label">Eco Processes</div>
+                <img src="images/Sustainability-1.webp" alt="Eco Processes" />
+                <div class="sustain-img-thumb__label">
+                  <i class="fas fa-leaf me-1"></i>Eco Processes
+                </div>
               </div>
               <div class="sustain-img-thumb">
                 <img src="images/solar.jpg" alt="Solar Energy" />
-                <div class="sustain-img-thumb__label">Solar Power</div>
+                <div class="sustain-img-thumb__label">
+                  <i class="fas fa-solar-panel me-1"></i>Solar Power
+                </div>
               </div>
             </div>
           </div>
@@ -446,63 +457,63 @@
   </div>
   <!-- end Video Modal -->
 
-  <!-- Global Partnering Section -->
-  <section class="global-partnering-section py-100 bg-light">
+  <!-- Clients Section — Premium Grid -->
+  <section class="clients-section" id="clients">
     <div class="container">
-      <div class="section-header text-center">
-        <span class="subtitle">Collaboration</span>
-        <h2>Our Happy Clients</h2>
-        <p>Trusted by those who believe in our products & services</p>
+
+      <div class="clients-header text-center">
+        <span class="clients-eyebrow"><i class="fas fa-globe me-2"></i>Global Collaboration</span>
+        <h2 class="clients-heading">Trusted by <span class="clients-heading--accent">World-Class Brands</span></h2>
+        <p class="clients-subtext">Partnering with leading retailers and fashion houses across Europe, the Middle East &amp; beyond.</p>
       </div>
-      <div class="partner-logos">
-        <div class="row align-items-center justify-content-center g-3">
-          <div class="col-auto">
-            <img src="images/clients2.png" alt="Partner 2" class="img-fluid" />
-          </div>
-          <div class="col-auto">
-            <img src="images/clients3.png" alt="Partner 3" class="img-fluid" />
-          </div>
-          <div class="col-auto">
-            <img src="images/clients4.png" alt="Partner 4" class="img-fluid" />
-          </div>
-          <div class="col-auto">
-            <img src="images/clients6.png" alt="Partner 5" class="img-fluid" />
-          </div>
-          <div class="col-auto">
-            <img src="images/clients5.png" alt="Partner 5" class="img-fluid" />
-          </div>
-          <div class="col-auto">
-            <img src="images/clients1.png" alt="Partner 1" class="img-fluid" />
-          </div>
-          <div class="col-auto">
-            <img src="images/clients7.png" alt="Partner 5" class="img-fluid" />
-          </div>
-          <div class="col-auto">
-            <img src="images/clients8.png" alt="Partner 5" class="img-fluid" />
-          </div>
-          <div class="col-auto">
-            <img src="images/clients9.png" alt="Partner 5" class="img-fluid" />
-          </div>
-          <div class="col-auto">
-            <img src="images/clients10.png" alt="Partner 5" class="img-fluid" />
-          </div>
-          <div class="col-auto">
-            <img src="images/clients14.png" alt="Partner 5" class="img-fluid" />
-          </div>
-          <div class="col-auto">
-            <img src="images/clients12.png" alt="Partner 5" class="img-fluid" />
-          </div>
-          <div class="col-auto">
-            <img src="images/clients13.png" alt="Partner 5" class="img-fluid" />
-          </div>
-          <div class="col-auto">
-            <img src="images/clients11.png" alt="Partner 5" class="img-fluid" />
-          </div>
+
+      <!-- Logo grid -->
+      <div class="clients-grid">
+        <div class="clients-logo-card"><img src="images/clients2.png" alt="Fox" /></div>
+        <div class="clients-logo-card"><img src="images/clients3.png" alt="Bang Bang" /></div>
+        <div class="clients-logo-card"><img src="images/clients4.png" alt="Edwin" /></div>
+        <div class="clients-logo-card"><img src="images/clients6.png" alt="Orchestra" /></div>
+        <div class="clients-logo-card"><img src="images/clients5.png" alt="Attalea" /></div>
+        <div class="clients-logo-card"><img src="images/clients1.png" alt="New Yorker" /></div>
+        <div class="clients-logo-card"><img src="images/clients7.png" alt="Vegotex" /></div>
+        <div class="clients-logo-card"><img src="images/clients8.png" alt="Pepco" /></div>
+        <div class="clients-logo-card"><img src="images/clients9.png" alt="Detsky Mir" /></div>
+        <div class="clients-logo-card"><img src="images/clients10.png" alt="Piazza Italia" /></div>
+        <div class="clients-logo-card"><img src="images/clients14.png" alt="Children's Place" /></div>
+        <div class="clients-logo-card"><img src="images/clients12.png" alt="Ruby Bay" /></div>
+        <div class="clients-logo-card"><img src="images/clients13.png" alt="Billabong" /></div>
+        <div class="clients-logo-card"><img src="images/clients11.png" alt="Switch" /></div>
+      </div>
+
+      <!-- Trust strip — bordered icon boxes -->
+      <div class="clients-trust-strip">
+        <div class="clients-trust-item">
+          <span class="clients-trust-icon"><i class="fas fa-handshake"></i></span>
+          <span class="clients-trust-num">14+</span>
+          <span class="clients-trust-lbl">Global Brands</span>
+        </div>
+        <div class="clients-trust-item">
+          <span class="clients-trust-icon"><i class="fas fa-globe-europe"></i></span>
+          <span class="clients-trust-num">20+</span>
+          <span class="clients-trust-lbl">Countries Served</span>
+        </div>
+        <div class="clients-trust-item">
+          <span class="clients-trust-icon"><i class="fas fa-award"></i></span>
+          <span class="clients-trust-num">24+</span>
+          <span class="clients-trust-lbl">Years of Trust</span>
+        </div>
+        <div class="clients-trust-item">
+          <span class="clients-trust-icon"><i class="fas fa-boxes"></i></span>
+          <span class="clients-trust-num">5M+</span>
+          <span class="clients-trust-lbl">Units Exported/yr</span>
         </div>
       </div>
+
     </div>
   </section>
+
   <!-- Production Services Section -->
+
   <!-- Testimonials -->
   <!-- <section class="testimonials-section bg-light">
     <div class="container">
